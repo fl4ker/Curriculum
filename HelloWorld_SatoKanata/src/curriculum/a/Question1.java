@@ -3,15 +3,15 @@ package curriculum.a;
 public class Question1 {
 
 	public static void main(String[] args) {
-		byte byteNum = 1; // 変数byteNumの初期値を設定
-		short shortNum = 1; // 変数shortNumの初期値を設定
-		int intNum = 1; // 変数intNumの初期値を設定
-		long longNum = 1; // 変数longNumの初期値を設定
-		float floatNum = 1; // 変数floatNumの初期値を設定
-		double doubleNum = 1; // 変数doubleの初期値を設定
-		char letter = 'n'; // 変数letterの初期値を設定
-		String letters = "neutral"; // 変数lettersの初期値を設定
-		boolean isboolean = true; // 変数isbooleanの初期値を設定
+		byte byteNum = 0; // 変数byteNumの初期値を設定
+		short shortNum = 0; // 変数shortNumの初期値を設定
+		int intNum = 0; // 変数intNumの初期値を設定
+		long longNum = 0L; // 変数longNumの初期値を設定
+		float floatNum = 0.0f; // 変数floatNumの初期値を設定
+		double doubleNum = 0.0; // 変数doubleの初期値を設定
+		char letter = '\u0000'; // 変数letterの初期値を設定
+		String letters = "null"; // 変数lettersの初期値を設定
+		boolean isboolean = false; // 変数isbooleanの初期値を設定
 		/*
 		 * Q2
 		 */
