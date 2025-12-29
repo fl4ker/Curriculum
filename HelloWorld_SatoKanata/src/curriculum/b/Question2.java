@@ -76,10 +76,84 @@ public class Question2 {
 			System.out.println("奇数です");// valueの値が2で割り切れないなら表示
 		}
 		
+		/*
+		 * Q7
+		 */
+		int score2 = 50;
 		
+		if(score2 >= 90) {
+			System.out.println("優");// score2の値が90以上なら表示
+		}else if(score2 >= 70 && score2 <= 89){
+			System.out.println("良");// 70以上なら表示
+		}else if(score2 >= 50 && score2 <= 69) {
+			System.out.println("可");// 50以上なら表示
+		}else if(score2 < 50) {
+			System.out.println("不可");// 50未満なら表示
+		}
 		
+		/*
+		 * Q8
+		 */
+		String text = null;
 		
+		if(text == null || text.equals("")) {
+			System.out.println("入力が無効です");// コンソール入力が null または空文字("")のときに「入力が無効です」と表示
+		}
 		
+		/*
+		 * Q9
+		 */
+		int day = 7;// この値は対応する曜日を表す
+		
+		//dayの値によってそれぞれの曜日を表示
+		switch(day) {
+		case 1:
+			System.out.println("月曜日");
+			break;
+		case 2:
+			System.out.println("火曜日");
+			break;
+		case 3:
+			System.out.println("水曜日");
+			break;
+		case 4:
+			System.out.println("木曜日");
+			break;
+		case 5:
+			System.out.println("金曜日");
+			break;
+		case 6:
+			System.out.println("土曜日");
+			break;
+		case 7:
+			System.out.println("日曜日");
+			break;
+		default:
+			System.out.println("無効な入力です");// 1から7までの値以外が入力されたら表示
+		}
+		
+		/*
+		 * Q10
+		 */
+		int month = 4;// 1から12までの対応する季節を表す
+		
+		// 入力されたmonthの値によって対応する季節を表示
+		switch(month) {
+		case 12,1,2:
+			System.out.println("冬");
+		break;
+		case 3,4,5:
+			System.out.println("春");
+		break;
+		case 6,7,8:
+			System.out.println("夏");
+		break;
+		case 9,10,11:
+			System.out.println("秋");
+		break;
+		default:
+			System.out.println("無効な月です");// 1から12までの値以外が入力されたら表示
+		}
 		
 		
 
