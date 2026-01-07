@@ -46,8 +46,38 @@ public class Question3 {
 			System.out.println(Mark);
 		}
 		
+		/*
+		 * Q6
+		 */
+		int count = 0;
 		
+		// countが10までループする
+		while (count < 10) {
+			count++;// countを1ずつ増やす
+			System.out.println(count);
+		}
 		
+		/*
+		 * Q7
+		 */
+		int countD = 0;
+		
+		// countDが20までループ
+		while(countD < 20) {
+			countD += 2;// 2ずつ増える
+			System.out.println(countD);
+		}
+		
+		/*
+		 * Q8
+		 */
+		int countD2 = 11;
+		
+		// countD2が1までループ
+		while(countD2 > 1) {
+			countD2 -= 1;// 1ずつ減る
+			System.out.println(countD2);
+		}
 		
 		
 		
