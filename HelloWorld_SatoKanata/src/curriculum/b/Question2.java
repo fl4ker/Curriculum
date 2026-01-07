@@ -8,7 +8,7 @@ public class Question2 {
 		 * Q1
 		 */
 		int score = 75;
-		if (score > 60) {
+		if (score >= 60) {
 			System.out.println("合格です！");// scoreが60以上なら合格です！と表示
 		}
 		
@@ -72,7 +72,7 @@ public class Question2 {
 		
 		if(value % 2 == 0) {
 			System.out.println("偶数です");// valueの値が2で割れるなら表示
-		}else if(value % 2 == 1) {
+		}else {
 			System.out.println("奇数です");// valueの値が2で割り切れないなら表示
 		}
 		
@@ -83,7 +83,7 @@ public class Question2 {
 		
 		if(score2 >= 90) {
 			System.out.println("優");// score2の値が90以上なら表示
-		}else if(score2 >= 70 && score2 <= 89){
+		}else if(score2 >= 70){
 			System.out.println("良");// 70以上なら表示
 		}else if(score2 >= 50 && score2 <= 69) {
 			System.out.println("可");// 50以上なら表示

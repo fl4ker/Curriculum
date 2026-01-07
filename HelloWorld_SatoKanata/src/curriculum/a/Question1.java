@@ -10,7 +10,7 @@ public class Question1 {
 		float floatNum = 0.0f; // 変数floatNumの初期値を設定
 		double doubleNum = 0.0; // 変数doubleの初期値を設定
 		char letter = '\u0000'; // 変数letterの初期値を設定
-		String letters = "null"; // 変数lettersの初期値を設定
+		String letters = null; // 変数lettersの初期値を設定
 		boolean isboolean = false; // 変数isbooleanの初期値を設定
 		/*
 		 * Q2
