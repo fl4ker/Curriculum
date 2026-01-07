@@ -28,15 +28,23 @@ public class Question3 {
 		/*
 		 * Q4
 		 */
+		int sum = 0;// 合計を貯める変数
+		
+		// 1から100まで1ずつ増やす処理を繰り返す
 		for (int num = 1; num <= 100; num++) {
-			if (num == 100) {
-				break;
-			}
-			System.out.println(num);
+			sum += num;// sumにnumを足してsumを更新する
+			System.out.println(num);// 値を表示する
 		}
 		
+		/*
+		 * Q5
+		 */
+		String[] sum2 = {"*", "**", "***", "****", "*****"};//
 		
-		
+		// Markにsum2の要素が1つずつ代入される
+		for(String Mark : sum2) {
+			System.out.println(Mark);
+		}
 		
 		
 		
