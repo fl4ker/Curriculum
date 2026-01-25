@@ -125,12 +125,12 @@ public class Question3 {
 			// 内側のループ部分、掛ける数
 			for(int b = 1; b < 10; b++) {
 				// 計算式を表示
-				System.out.println(a + " * " + b + " = " + (a * b));
+				System.out.print(a + " * " + b + " = " + (a * b));
 				
 				if(a == 10 && b == 10) {
 					// 式の最後の羅列までは何もしない
 				}else { // 区切り線を表示
-					System.out.println("||");
+					System.out.print("||");
 				}
 				
 			}
