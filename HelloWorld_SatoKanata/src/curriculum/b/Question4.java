@@ -146,7 +146,7 @@ public class Question4 {
 		};
 		// 最初の要素で初期化
 		int high2 = array3[0][0];
-		int low2 = array[0][0];
+		int low2 = array3[0][0];
 		
 		// 
 		for(int[] l1 : array3) {
@@ -160,25 +160,23 @@ public class Question4 {
 			}
 		}
 		
-		System.out.println(high);
-		System.out.println(low);
+		System.out.println(high2);
+		System.out.println(low2);
 		
 		/*
 		 * Q10
 		 */
 		
 		int[][][] array4 = {
-				{{1,2},
-				{3,4}},
-				{{5,6},
-				{7,8}}
+				{{1,2},{3,4}},
+				{{5,6},{7,8}}
 		};
 		
 		// 3次元配列のため三重ループ
 		for(int l1 = 0; l1 < array4.length; l1++) {
-			for(int l2 = 0; l2 < array[l1].length; l2++) {
+			for(int l2 = 0; l2 < array4[l1].length; l2++) {
 				for(int l3 = 0; l3 < array4[l1][l2].length; l3++) {
-					System.out.print(array4[l1][l2][l3]);
+					System.out.println(array4[l1][l2][l3]);
 				}
 			}
 		}
