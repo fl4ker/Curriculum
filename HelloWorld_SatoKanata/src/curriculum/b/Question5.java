@@ -23,12 +23,6 @@ public class Question5 {
 			System.out.println("は奇数です");
 		}
 		
-		System.out.print(num2);
-		if(isEven(num2)) {
-			System.out.println("は偶数です");
-		}else {
-			System.out.println("は奇数です");
-		}
 		
 		// Q4
 		Greeting greeter = new Greeting();// Greetingクラスのインスタンスを作成
@@ -79,7 +73,6 @@ public class Question5 {
 	/*
 	 * Q3
 	 */
-	boolean sum = false;
 	
 	//偶数か奇数を判別するメソッド
 	public static boolean isEven(int num) {
@@ -87,9 +80,8 @@ public class Question5 {
 		
 	}
 	
-	/*
-	 * Q4
-	 */
+	
+	
 	
 	
 	
