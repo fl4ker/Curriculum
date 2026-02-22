@@ -3,7 +3,18 @@ package curriculum.g;
 public class main {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+		
+		// オブジェクトを生成
+		Employee staff = new Employee();
+		
+		// setメソッドで設定
+		staff.setEmployeeId("E002");
+		staff.setName("田中花子");
+		
+		// getメソッドで出力
+		System.out.println("社員ID:" + staff.getEmployeeId() + ",名前:" + staff.getName());
+		
+		
 
 	}
 
