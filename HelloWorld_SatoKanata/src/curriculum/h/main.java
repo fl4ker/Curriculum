@@ -3,7 +3,15 @@ package curriculum.h;
 public class main {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+		
+		FullTimeEmployee staff1 = new FullTimeEmployee();
+		
+		PartTimeEmployee staff2 = new PartTimeEmployee();
+		
+		
+		System.out.println("正社員の給与:" + getEmployeeId);
+		
+		
 
 	}
 
