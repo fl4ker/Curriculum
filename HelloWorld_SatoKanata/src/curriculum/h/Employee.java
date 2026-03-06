@@ -1,7 +1,7 @@
 package curriculum.h;
 
 public abstract class Employee {
-	
+	// フィールド
 	private String employeeId;
 	private String name;
 	
@@ -18,6 +18,7 @@ public abstract class Employee {
 		return this.name;
 	}
 	
+	// 抽象メソッド
 	public abstract int calculateDailyWage(int hoursWorked);
 	
 	
