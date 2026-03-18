@@ -1,0 +1,33 @@
+package curriculum.j;
+
+public class FullTimeEmployee extends Employee  {
+	
+	public FullTimeEmployee(int id, String name) {
+		// Employeeクラスのコンストラクタを呼び出す
+		super(id,name);
+	}
+
+	@Override
+	public int costForDay(int hoursWorked) {
+		
+		int hourlyRate = 1250;
+		int overtime = Math.max(0, hoursWorked - 8);
+		int regularHours = hoursWorked - overtime;
+		return (regularHours * hourlyRate) + (int)(overtime * hourlyRate * 1.25);
+		
+	}
+
+	@Override
+	public int id() {
+		
+		return super.id();
+	}
+
+	@Override
+	public String name() {
+		
+		return super.name();
+	}
+	
+
+}
