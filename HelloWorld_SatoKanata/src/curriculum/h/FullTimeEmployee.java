@@ -1,11 +1,11 @@
 package curriculum.h;
 
-public class FullTimeEmployee {
+public class FullTimeEmployee extends Employee {
 	// 時給を定数で設定
 	private static final int HOURLY_RATE = 1200;
 	
 	public FullTimeEmployee(String id, String name) {
-		super();
+		super(id,name);
 	}
 	
 	public int calculateDailyWage(int hoursWorked) {

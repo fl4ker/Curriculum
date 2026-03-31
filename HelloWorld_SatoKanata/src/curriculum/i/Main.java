@@ -2,7 +2,7 @@ package curriculum.i;
 import java.util.ArrayList;
 import java.util.List;
 
-public class main {
+public class Main {
 
 	public static void main(String[] args) {
 		

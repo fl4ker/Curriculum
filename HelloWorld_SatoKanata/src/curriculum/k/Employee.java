@@ -25,6 +25,10 @@ public class Employee {
 	public int getHours() {
 		return hours;
 	}
+
+	public int calculateSalary() {
+		return 0;
+	}
 	
 
 }

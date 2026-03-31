@@ -1,6 +1,6 @@
 package curriculum.j;
 
-public class ContractEmployee extends Employee {
+public abstract class ContractEmployee extends Employee {
 	
 	
 	public ContractEmployee(int id, String name) {
@@ -14,16 +14,7 @@ public class ContractEmployee extends Employee {
 	}
 
 
-	@Override
-	public int id() {
-		return super.id();
-	}
-
-
-	@Override
-	public String name() {
-		return super.name();
-	}
+	
 	
 	
 

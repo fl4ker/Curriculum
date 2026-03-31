@@ -3,7 +3,7 @@ package curriculum.k;
 import java.util.ArrayList;
 import java.util.List;
 
-public class main {
+public class Main {
 
 	public static void main(String[] args) {
 		Payable staff1 = new FullTimeEmployee("佐藤",150);

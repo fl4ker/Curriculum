@@ -1,7 +1,6 @@
 package curriculum.f;
 
 public class Employee {
-	public static Employee staff;
 	public String employeeId;// フィールド
 	public String name;
 	

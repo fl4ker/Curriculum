@@ -1,6 +1,6 @@
 package curriculum.j;
 
-public class FullTimeEmployee extends Employee  {
+public abstract class FullTimeEmployee extends Employee  {
 	
 	public FullTimeEmployee(int id, String name) {
 		// Employeeクラスのコンストラクタを呼び出す
@@ -17,17 +17,7 @@ public class FullTimeEmployee extends Employee  {
 		
 	}
 
-	@Override
-	public int id() {
-		
-		return super.id();
-	}
-
-	@Override
-	public String name() {
-		
-		return super.name();
-	}
+	
 	
 
 }

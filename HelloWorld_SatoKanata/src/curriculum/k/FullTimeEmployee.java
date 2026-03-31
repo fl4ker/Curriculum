@@ -1,11 +1,12 @@
 package curriculum.k;
 
-public class FullTimeEmployee implements Payable {
+public class FullTimeEmployee extends Employee{
 	
 	private String name;
 	private int hours;
 	
 	public FullTimeEmployee(String name,int hours) {
+		super(name,"正社員",hours);
 		this.name = name;
 		this.hours = hours;
 	}

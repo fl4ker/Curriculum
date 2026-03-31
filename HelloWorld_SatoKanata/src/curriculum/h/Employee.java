@@ -7,7 +7,7 @@ public abstract class Employee {
 	
 	Employee(String id,String name){
 		employeeId = id;
-		name = name;
+		this.name = name;
 	}
 	
 	public String getEmployeeId(){
