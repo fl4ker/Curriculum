@@ -6,7 +6,7 @@ public abstract class Employee {
 	private String name;
 	
 	Employee(String id,String name){
-		employeeId = id;
+		this.employeeId = id;
 		this.name = name;
 	}
 	

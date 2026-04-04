@@ -1,6 +1,6 @@
 package curriculum.k;
 
-public class ContractEmployee extends Employee {
+public class ContractEmployee extends Employee implements Payable {
 	
 	private String name;
 	private int hours;

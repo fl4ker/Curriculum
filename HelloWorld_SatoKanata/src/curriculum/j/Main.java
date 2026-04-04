@@ -9,8 +9,8 @@ public class Main {
 		// Billableのリス
 		List<Billable> employees = new ArrayList<>();
 		
-		employees.add(new FullTimeEmployee(1,"staff1"));
-		employees.add(new ContractEmployee(2,"staff2"));
+		employees.add(FullTimeEmployee(1,"staff1"));
+		employees.add(ContractEmployee(2,"staff2"));
 		
 		
 		for(Billable b : employees) {
@@ -22,6 +22,16 @@ public class Main {
 		
 		
 
+	}
+
+	private static Billable ContractEmployee(int i, String string) {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+	private static Billable FullTimeEmployee(int i, String string) {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
 	}
 
 }
