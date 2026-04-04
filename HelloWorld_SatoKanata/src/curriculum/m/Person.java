@@ -7,7 +7,7 @@ public class Person {
 	double height;
 	double weight;
 	//double bmi;
-	double getBmi;
+	
 	
 
 	  // コンストラクタを定義しインスタンスフィールドに値をセット
