@@ -34,7 +34,6 @@ public class Question6 {
 			
 			if(playerHand == cpuHand) {
 				System.out.println("あいこになりました");
-				
 			//	３つのパターンに当てはまれば勝ちの条件を付与
 			}else if((playerHand == 0 && cpuHand == 1) || // 自分：グー、相手：チョキ
 			           (playerHand == 1 && cpuHand == 2) || // 自分：チョキ、相手：パー

@@ -1,10 +1,10 @@
 package curriculum.j;
 
-public abstract class FullTimeEmployee extends Employee  {
+class FullTimeEmployee extends Employee implements Billable  {
 	
 	public FullTimeEmployee(int id, String name) {
 		// Employeeクラスのコンストラクタを呼び出す
-		super(id,name);
+		super(id, name);
 	}
 
 	@Override

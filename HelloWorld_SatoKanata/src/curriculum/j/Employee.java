@@ -20,11 +20,11 @@ public abstract class Employee implements Billable{
 	}
 	
 	// mainクラスから呼ぶために必要
-	public int Id() {
+	public int id() {
 		return id;
 	}
 	
-	public String Name() {
+	public String name() {
 		return name;
 	}
 	

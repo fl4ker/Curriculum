@@ -8,6 +8,9 @@ public class FullTimeEmployee extends Employee implements Payable{
 	public FullTimeEmployee(String name,int hours) {
 		super(name,"正社員",hours);
 		
+		this.name = name;
+		this.hours = hours;
+		
 	}
 	
 	@Override

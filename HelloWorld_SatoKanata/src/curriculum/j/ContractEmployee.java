@@ -1,6 +1,6 @@
 package curriculum.j;
 
-public abstract class ContractEmployee extends Employee {
+public class ContractEmployee extends Employee {
 	
 	
 	public ContractEmployee(int id, String name) {
