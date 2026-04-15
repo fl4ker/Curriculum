@@ -1,5 +1,6 @@
 package curriculum.d;
 
+import java.io.BufferedReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
@@ -14,12 +15,16 @@ public class Question7 {
 		Character generator = new Character();
 		
 		// テキストファイルの読み込み
-		try {
-			List<String> lines = Files.readAllLines(Paths.get("DaemonStatus.txt"));
-			
-			for(String line : lines){
-				System.out.println(line);
+		
+		try(BufferedReader br = new BufferedReader(new FileReader("DaemonStatus.txt"))){
+			String line = br.readLine();
+			if(line != null) {
+				String[] values = line.split(",");
+ 				for(int i = 0; i < 3; i++){
+					
+				}
 			}
+			
 			
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -41,7 +46,7 @@ public class Question7 {
 			System.out.println("SP: " + result[2]);
 			
 			scanner.close();
-			if(player ) {
+			if(player.result[2] ) {
 				
 				
 				

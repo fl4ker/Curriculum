@@ -7,8 +7,7 @@ public class ContractEmployee extends Employee implements Payable {
 	
 	public ContractEmployee(String name,int hours) {
 		super(name,"契約社員",hours);
-		this.name = name;
-		this.hours = hours;
+		
 	}
 	
 	
@@ -18,7 +17,7 @@ public class ContractEmployee extends Employee implements Payable {
 	}
 	
 	@Override
-	public int calculateSalary() {
+	public int getHours() {
 		return this.hours * 1000;
 	}
 	
