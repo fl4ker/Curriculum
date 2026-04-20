@@ -10,15 +10,18 @@ public class FullTimeEmployee extends Employee implements Payable{
 		
 	}
 	
-	@Override
-	public int getHours() {
+	public int getHours(int hours) {
 		return hours * 1200;
 	}
 	
-	@Override
-	public String getName() {
+	public String getName(String name) {
 		return name;
 	}
 	
+	@Override
+    public int calculateSalary() {
+        // 親クラスの getHours() を使って計算
+        return getHours() * 1200; 
+    }
 
 }
