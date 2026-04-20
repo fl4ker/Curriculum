@@ -14,13 +14,13 @@ public class Question6 {
 		while(!isWin) {
 			System.out.println("グー(0),チョキ(1),パー(2) 入力してください");
 			
-			int playerHand = scanner.nextInt();
-			
 			if (!scanner.hasNextInt()) {
                 System.out.println("数字以外は入力できません");
                 scanner.next(); 
                 continue;
             }
+			
+			int playerHand = scanner.nextInt();
 			
 			// ０から２以外の数字が入力された時に表示させる
 			if(playerHand < 0 || playerHand > 2) {
