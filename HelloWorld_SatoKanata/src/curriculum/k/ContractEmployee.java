@@ -10,13 +10,6 @@ public class ContractEmployee extends Employee implements Payable {
 		
 	}
 	
-	public String getName(int hours) {
-		return this.name;
-	}
-	
-	public int getHours(String name) {
-		return this.hours * 1000;
-	}
 	
 	@Override
     public int calculateSalary() {

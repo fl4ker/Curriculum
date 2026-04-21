@@ -10,13 +10,6 @@ public class FullTimeEmployee extends Employee implements Payable{
 		
 	}
 	
-	public int getHours(int hours) {
-		return hours * 1200;
-	}
-	
-	public String getName(String name) {
-		return name;
-	}
 	
 	@Override
     public int calculateSalary() {
