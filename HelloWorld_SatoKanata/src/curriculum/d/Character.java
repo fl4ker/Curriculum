@@ -21,19 +21,22 @@ public class Character {
 	// テキストファイルの読み込み
 	public int[] loadDaemon(String fileName) {
 		int[] stats = new int[3];
-		try(BufferedReader br = new BufferedReader(new FileReader("DaemonStatus.txt"))){
-			br.readLine();
-			
- 			for(int i = 0; i < 3; i++){
- 				String val = br.readLine();
- 				if(val != null) {
- 					stats[i] = Integer.parseInt(val.trim());
- 				}
-				
+		int count = 0;
+		try(BufferedReader br = new BufferedReader(new FileReader(fileName))){
+			br.readLine();// 1行目を飛ばす
+			String line;
+			while ((line = br.readLine()) != null && count < 3) {
+                line = line.trim();
+                if (line.isEmpty()) continue; // 空行があれば飛ばす
+                
+                stats[count] = Integer.parseInt(line);
+                count++;
 			}
+ 			
 			
 		}catch(Exception e) {
 			System.out.println("読み込みに失敗したためデフォルト値設定になります");
+			e.printStackTrace();
 			return new int[]{100, 10, 10}; // 失敗時の予備
 		}
 		return stats;
