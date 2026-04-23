@@ -2,7 +2,6 @@ package curriculum.d;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Random;
 import java.util.Scanner;
 
 
@@ -12,7 +11,6 @@ public class Question7 {
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
-		Random random = new Random();
 		Character generator = new Character();
 		
 		int [] playerData = generator.generateStatus(100, 51, 30);
@@ -27,7 +25,6 @@ public class Question7 {
 		
 		// バトル判定
 		while(!isWin) {
-			String turnMsg = "";
 			
 			System.out.println("\n【現在のステータス】");
 			System.out.println(playerName + " HP: " + playerData[0] + " / AT: " + playerData[1] + " / SP: " + playerData[2]);
@@ -43,23 +40,15 @@ public class Question7 {
 			if(playerData[2] > daemonData[2]) {
 				playerFirst = true;
 				
-			}else if(daemonData[2] == playerData[2]){
+			}else if(daemonData[2] > playerData[2]){
+				playerFirst = false;
+				
+			}else {
 				playerFirst = (generator.generateStatus(2)[0] == 0);
 				
-			}/*else {
-				// 乱数を追加して振り分ける
-				int atRandom = generator.generateStatus(2)[0];
-				if(atRandom == 0) {
-					turnMsg = playerName + " の攻撃 Daemonに" + playerData[1] + "のダメージ\n";
-					daemonData[0] -= playerData[1];
-				}else {
-					turnMsg = "Daemonの攻撃 " + playerName + "に" + daemonData[1] + "のダメージ\n";
-					playerData[0] -= daemonData[1];
-				}
-				System.out.print(turnMsg);
-				log.append(turnMsg); // ログに追加
-				System.out.println(playerName + " HP: " + playerData[0] + " / Daemon HP: " + daemonData[0]);
-			}*/
+			}
+			
+			
 			
 			// 交互に攻撃
 			if(playerFirst) {

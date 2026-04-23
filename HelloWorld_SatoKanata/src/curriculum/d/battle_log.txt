@@ -1,4 +1,3 @@
 aの攻撃 Daemonに45のダメージ
 Daemonの攻撃 aに15のダメージ
-aの攻撃 Daemonに45のダメージ
-結果: aの勝利
+結果: Daemonの勝利
