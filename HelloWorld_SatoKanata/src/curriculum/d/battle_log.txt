@@ -1,3 +1,3 @@
-aの攻撃 Daemonに45のダメージ
-Daemonの攻撃 aに15のダメージ
+kの攻撃 Daemonに31のダメージ
+Daemonの攻撃 kに15のダメージ
 結果: Daemonの勝利

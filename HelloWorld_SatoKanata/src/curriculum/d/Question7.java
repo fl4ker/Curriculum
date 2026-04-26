@@ -13,7 +13,7 @@ public class Question7 {
 		Scanner scanner = new Scanner(System.in);
 		Character generator = new Character();
 		
-		int [] playerData = generator.generateStatus(100, 51, 30);
+		int [] playerData = generator.generateStatus(100, 51, 6);
 		int[] daemonData = generator.loadDaemon("src/curriculum/d/DaemonStatus.txt");
 		
 		StringBuilder log = new StringBuilder(); // ログ記録用
@@ -44,7 +44,7 @@ public class Question7 {
 				playerFirst = false;
 				
 			}else {
-				playerFirst = (generator.generateStatus(2)[0] == 0);
+				playerFirst = (generator.generateStatus(2)[0] == 1);
 				
 			}
 			
